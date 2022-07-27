@@ -74,7 +74,7 @@ void bubble_sort(int arr[], int n)
 void selection_sort(int arr[], int n)
 {
   int i,j,temp;
-  for (i=;i<n-1;i++)
+  for (i=0;i<n-1;i++)
   {
     for (j=i+1; j<n; j++)
     {
@@ -110,5 +110,16 @@ void quick_sort(int arr[], int n)
     arr[j]=temp;
   }
   printf("Elements after Quick Sort:");
+  display(arr,n);
+}
+void merge_sort(int arr[], int n)
+{
+  int i,j,k;
+  if(arr[i]<=arr[j])
+    arr[k]=arr[j++];
+  else
+    arr[k]=arr[i++];
+}
+  printf("Elements after merge sort:");
   display(arr,n);
 }
