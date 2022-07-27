@@ -7,3 +7,15 @@ scanf ("%c", &operator);
 printf("Enter values of n1 and n2\n");
 scanf("%f %f", &n1, &n2);
 //Enter the values of n1 and n2 with a space in between
+switch(operator){
+  case '+': result = n1 + n2;
+    break;
+  case '-': result = n1 - n2;
+    break;
+  case '*': result = n1 * n2;
+    break;
+  case '/': result = n1 / n2;
+    break;
+  default: printf("\nInvalid Operator");
+}
+  
