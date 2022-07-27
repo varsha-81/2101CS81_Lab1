@@ -18,4 +18,5 @@ switch(operator){
     break;
   default: printf("\nInvalid Operator");
 }
+  printf(" Result = %f", result);
   
