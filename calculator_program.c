@@ -19,4 +19,4 @@ switch(operator){
   default: printf("\nInvalid Operator");
 }
   printf(" Result = %f", result);
-  
+  return 0;}
