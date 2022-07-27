@@ -74,7 +74,7 @@ void bubble_sort(int arr[], int n)
 void selection_sort(int arr[], int n)
 {
   int i,j,temp;
-  for (i=0,i<n-1,i++)
+  for (i=;i<n-1;i++)
   {
     for (j=i+1; j<n; j++)
     {
@@ -87,3 +87,17 @@ void selection_sort(int arr[], int n)
   printf("Elements after selection sort:");
   display(arr,n);
 }
+void insertion_sort(int arr[], int n)
+{
+  int i,j,min;
+  for(i=1;i<n;i++)
+  {
+    min = arr[i];
+    j=i-1;
+    while (min<arr[j] && j>=0)
+    {
+      arr[j+1]=min;
+    }
+    printf ("Elements after Insertion sort:");
+    display (arr,n);
+  }
