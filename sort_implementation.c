@@ -101,3 +101,14 @@ void insertion_sort(int arr[], int n)
     printf ("Elements after Insertion sort:");
     display (arr,n);
   }
+void quick_sort(int arr[], int n)
+{
+  int i,j,temp;
+  if(i<j){
+    temp=arr[i];
+    arr[i]=arr[j];
+    arr[j]=temp;
+  }
+  printf("Elements after Quick Sort:");
+  display(arr,n);
+}
